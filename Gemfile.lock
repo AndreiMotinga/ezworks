@@ -1,3 +1,18 @@
+GIT
+  remote: git://github.com/mbleigh/acts-as-taggable-on.git
+  revision: 8e64c3d4a81cfbb8af621228eae36a65c1f94501
+  specs:
+    acts-as-taggable-on (4.0.0)
+      activerecord (>= 4.0)
+
+GIT
+  remote: git://github.com/norman/friendly_id.git
+  revision: aff0564584e84ffa505e6e278b65ca3c4ee5d698
+  branch: master
+  specs:
+    friendly_id (5.2.0.beta.1)
+      activerecord (>= 4.0.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -47,6 +62,7 @@ GEM
     babel-transpiler (0.7.0)
       babel-source (>= 4.0, < 6)
       execjs (~> 2.0)
+    bcrypt (3.1.11)
     bitters (1.4.0)
       bourbon (>= 5.0.0.beta.6)
       sass (~> 3.4)
@@ -72,6 +88,10 @@ GEM
     capybara-webkit (1.11.1)
       capybara (>= 2.3.0, < 2.8.0)
       json
+    clearance (1.15.1)
+      bcrypt
+      email_validator (~> 1.4)
+      rails (>= 3.1)
     coderay (1.1.1)
     concurrent-ruby (1.0.2)
     crack (0.4.3)
@@ -89,6 +109,8 @@ GEM
     dotenv-rails (2.1.1)
       dotenv (= 2.1.1)
       railties (>= 4.0, < 5.1)
+    email_validator (1.6.0)
+      activemodel
     erubis (2.7.0)
     execjs (2.7.0)
     factory_girl (4.7.0)
@@ -96,8 +118,11 @@ GEM
     factory_girl_rails (4.7.0)
       factory_girl (~> 4.7.0)
       railties (>= 3.0.0)
+    ffaker (2.2.0)
     ffi (1.9.14)
     flutie (2.0.0)
+    font-awesome-rails (4.7.0.0)
+      railties (>= 3.2, < 5.1)
     formulaic (0.3.0)
       activesupport
       capybara
@@ -113,6 +138,9 @@ GEM
       railties (>= 4.2.0)
       thor (>= 0.14, < 2.0)
     json (2.0.2)
+    kaminari (0.17.0)
+      actionpack (>= 3.0.0)
+      activesupport (>= 3.0.0)
     launchy (2.4.3)
       addressable (~> 2.3)
     listen (3.1.5)
@@ -168,11 +196,18 @@ GEM
       bundler (>= 1.3.0, < 2.0)
       railties (= 5.0.0.1)
       sprockets-rails (>= 2.0.0)
+    rails-controller-testing (1.0.1)
+      actionpack (~> 5.x)
+      actionview (~> 5.x)
+      activesupport (~> 5.x)
     rails-dom-testing (2.0.1)
       activesupport (>= 4.2.0, < 6.0)
       nokogiri (~> 1.6.0)
     rails-html-sanitizer (1.0.3)
       loofah (~> 2.0)
+    rails-timeago (2.15.0)
+      actionpack (>= 3.1)
+      activesupport (>= 3.1)
     rails_stdout_logging (0.0.5)
     railties (5.0.0.1)
       actionpack (= 5.0.0.1)
@@ -186,6 +221,7 @@ GEM
       ffi (>= 0.5.0)
     recipient_interceptor (0.1.2)
       mail
+    redcarpet (3.3.4)
     refills (0.2.0)
     rspec-core (3.5.4)
       rspec-support (~> 3.5.0)
@@ -260,6 +296,9 @@ GEM
     title (0.0.7)
       i18n
       rails (>= 3.1)
+    turbolinks (5.0.1)
+      turbolinks-source (~> 5)
+    turbolinks-source (5.0.0)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
     uglifier (3.0.3)
@@ -284,21 +323,28 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  acts-as-taggable-on!
   autoprefixer-rails
   awesome_print
   bourbon (= 5.0.0.beta.6)
   bullet
   bundler-audit (>= 0.5.0)
   capybara-webkit
+  clearance
+  coderay
   database_cleaner
   delayed_job_active_record
   dotenv-rails
   factory_girl_rails
+  ffaker
   flutie
+  font-awesome-rails
   formulaic
+  friendly_id!
   high_voltage
   honeybadger
   jquery-rails
+  kaminari
   launchy
   listen
   neat (~> 1.8.0)
@@ -311,8 +357,11 @@ DEPENDENCIES
   rack-mini-profiler
   rack-timeout
   rails (~> 5.0.0)
+  rails-controller-testing
+  rails-timeago (~> 2.0)
   rails_stdout_logging
   recipient_interceptor
+  redcarpet
   refills
   rspec-rails (~> 3.5.0.beta4)
   sass-rails (~> 5.0)
@@ -328,6 +377,7 @@ DEPENDENCIES
   suspenders
   timecop
   title
+  turbolinks (~> 5.0.0)
   uglifier
   web-console
   webmock

@@ -1,0 +1,12 @@
+- projects = YAML.load_file('public/projects.yml')
+
+.cards
+  - projects.each do |project|
+    .card
+      .card-header
+        = project["name"]
+      .card-image
+        a href=project["url"] target="_blank"
+          img src=image_path("portfolio/#{project["image"]}") alt=project["name"]
+      .card-copy
+        a href=project["url"] target="_blank" type="button" VISIT

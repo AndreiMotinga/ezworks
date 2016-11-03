@@ -1,0 +1,18 @@
+$box-padding: 20px;
+
+.box {
+  border-radius: $base-border-radius;
+  border: $base-border;
+  box-shadow: $box-shadow;
+  margin-bottom: 20px;
+
+  h1 {
+    padding: $box-padding;
+    font-size: 20px;
+    margin: 0;
+  }
+
+  p {
+    padding: $box-padding;
+  }
+}

@@ -4,6 +4,13 @@
 
 @import "bourbon";
 @import "neat";
+@import "font-awesome";
 
 @import "base/base";
-@import "refills/flashes";
+@import "components/box";
+@import "components/cards";
+@import "components/flashes";
+@import "components/header";
+
+@import "pages/about";
+@import "pages/articles";

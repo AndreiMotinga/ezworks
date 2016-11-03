@@ -1,0 +1,11 @@
+$articles-width: 700px;
+
+.articles {
+  main {
+    @include outer-container($articles-width);
+  }
+
+  .tag {
+    margin: 10px;
+  }
+}

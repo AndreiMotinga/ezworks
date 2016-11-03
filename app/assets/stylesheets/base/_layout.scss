@@ -12,3 +12,7 @@ html,
 body {
   height: 100%;
 }
+
+main {
+  @include outer-container($large-screen);
+}

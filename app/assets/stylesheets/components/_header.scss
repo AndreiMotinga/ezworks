@@ -1,0 +1,59 @@
+.main-header  {
+  @include outer-container(100%);
+  background-image: url("header-bg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.main-header__title {
+  @include padding(15px null);
+  text-align: center;
+  font-weight: 300;
+}
+
+.main-header__logo {
+  background: url(logo.png) 50% no-repeat;
+  background-size: cover;
+  height: 150px;
+  width: 150px;
+  margin: auto auto 10px;
+}
+
+/* nav */
+$main-navbar-padding: 10px;
+$main-navbar-a-border-bottom: 2px;
+.main-navbar {
+  @include row();
+  background-color: rgba(0, 0, 0, 0.08);
+  flex: 1;
+}
+
+.main-navbar ul {
+  @include outer-container(900px);
+  display: flex;
+}
+
+.main-navbar li {
+  flex: 1;
+  text-align: center;
+}
+
+.main-navbar a {
+  color: $dark-gray;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 14px;
+  padding: $main-navbar-padding;
+  width: 100%;
+  transition: all 0.5s;
+}
+
+.main-navbar a.active {
+  font-weight: bold;
+  border-bottom: $main-navbar-a-border-bottom solid red;
+  padding-bottom: calc($main-navbar-padding - $main-navbar-a-border-bottom)
+}
+//* nav */

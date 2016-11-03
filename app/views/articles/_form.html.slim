@@ -1,0 +1,13 @@
+link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplemde/1.11.2/simplemde.min.css"
+script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/simplemde/1.11.2/simplemde.min.js"
+
+javascript:
+  document.addEventListener("turbolinks:load", function(){
+    simplemde = new SimpleMDE()
+  });
+
+= simple_form_for @article do |f|
+    = f.input :title
+    = f.input :text
+    = f.input :tag_list, input_html: { "data-delimiter": ', ', value: @article.tag_list.join(", ") }
+    = f.submit

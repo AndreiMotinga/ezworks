@@ -8,8 +8,29 @@ html lang="en"
       = title
     = stylesheet_link_tag :application, media: "all"
     = csrf_meta_tags
+
   body class= body_class
+    header.main-header
+      div.main-header__title
+        div.main-header__logo
+        div Andrei Motinga
+        div Brooklyn NY
+        div= fa_icon "mobile", text: "+1(929) 293-5385"
+
+      nav.main-navbar
+        ul
+          li= link_to 'PORTFOLIO', root_path, class: is_page("portfolio")
+          li= link_to 'BLOG', articles_path, class: is_controller("articles")
+          li= link_to 'ABOUT', page_path('about'), class: is_page("about")
+        / ul
+      / nav
+    / header
+
     = render "flashes"
-    = yield
+
+    main
+      = yield
+    / main content
+
     = render "javascript"
     = render "css_overrides"

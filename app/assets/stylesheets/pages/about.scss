@@ -1,0 +1,26 @@
+.about {
+  .nav {
+    display: flex;
+    align-items: center;
+
+    li {
+      flex: 20;
+    }
+
+    .nav__i {
+      padding: 10px;
+      text-align: center;
+      flex:1;
+
+      a {
+        color: $base-font-color;
+      }
+    }
+
+    .nav__phone {
+      padding: 10px;
+      text-align: center;
+      flex:10;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+article
+  header
+    h1= @article.title
+    = timeago_tag @article.updated_at
+
+  p= markdown @article.text
+
+  footer
+    - @article.tag_list.each do |tag|
+        span= link_to "#{tag.upcase}", tag_articles_path(tag)
