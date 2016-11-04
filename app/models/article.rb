@@ -4,6 +4,7 @@ class Article < ApplicationRecord
   friendly_id :title, use: :slugged
   validates :title, presence: true
   validates :text, presence: true
+  validates :summary, presence: true
 
   scope :desc, -> { order("created_at desc") }
 end

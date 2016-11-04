@@ -6,6 +6,43 @@ $articles-width: 700px;
   }
 
   .tag {
-    margin: 10px;
+    margin-right: 5px;
+    font-weight: 600;
+    font-size: 12px;
+  }
+
+  time {
+    margin-right: 10px;
+  }
+}
+
+/* Articles show page */
+
+.articles-show {
+  article {
+    header {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      * {
+        margin-bottom: 10px;
+      }
+
+      .title {
+        font-size: 28px;
+      }
+
+      .tags {
+        margin-bottom: 20px;
+      }
+    }
+
+    .CodeRay {
+      @include margin(15px null);
+      background-color: lighten($light-gray, 8%);
+      font-size: 15px;
+      padding: 5px;
+    }
   }
 }

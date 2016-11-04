@@ -1,10 +1,23 @@
 article
   header
-    h1= @article.title
-    = timeago_tag @article.updated_at
-
-  p= markdown @article.text
-
-  footer
-    - @article.tag_list.each do |tag|
+    h1.title= @article.title
+    = timeago_tag @article.created_at
+    .tags
+      - @article.tag_list.each do |tag|
         span= link_to "#{tag.upcase}", tag_articles_path(tag)
+
+  main
+    = markdown @article.text
+
+section#disqus_thread
+
+
+// Disqus comments
+- content_for(:javascript)
+  javascript:
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = '//ezworks.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();

@@ -8,6 +8,7 @@ javascript:
 
 = simple_form_for @article do |f|
     = f.input :title
+    = f.input :summary
     = f.input :text
     = f.input :tag_list, input_html: { "data-delimiter": ', ', value: @article.tag_list.join(", ") }
     = f.submit

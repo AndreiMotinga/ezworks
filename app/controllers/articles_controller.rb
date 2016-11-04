@@ -1,4 +1,5 @@
 class ArticlesController < ApplicationController
+  before_action :require_login, only: [:new, :edit, :update, :destroy]
   before_action :set_article, only: [:show, :edit, :update, :destroy]
 
   # GET /articles
@@ -60,6 +61,6 @@ class ArticlesController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def article_params
-      params.require(:article).permit(:title, :text, :tag_list)
+      params.require(:article).permit(:title, :text, :tag_list, :summary)
     end
 end
