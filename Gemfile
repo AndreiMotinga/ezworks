@@ -29,7 +29,7 @@ gem "sprockets", ">= 3.0.0"
 gem "sprockets-es6"
 gem "suspenders"
 gem "title"
-gem "turbolinks", "~> 5.0.0"
+gem "turbolinks", "~> 5.0.0.beta3"
 gem "uglifier"
 
 group :development do

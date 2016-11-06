@@ -377,7 +377,7 @@ DEPENDENCIES
   suspenders
   timecop
   title
-  turbolinks (~> 5.0.0)
+  turbolinks (~> 5.0.0.beta3)
   uglifier
   web-console
   webmock
