@@ -6,7 +6,7 @@ javascript:
     simplemde = new SimpleMDE()
   });
 
-= simple_form_for @article do |f|
+= simple_form_for @article, class: :article do |f|
     = f.input :title
     = f.input :summary
     = f.input :text

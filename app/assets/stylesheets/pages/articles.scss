@@ -19,7 +19,7 @@ $articles-width: 700px;
 /* Articles show page */
 
 .articles-show {
-  article {
+  .article {
     margin-bottom: $base-spacing * 2;
 
     header {
@@ -49,6 +49,12 @@ $articles-width: 700px;
 
     a {
       text-decoration: underline;
+    }
+
+    ul,
+    ol {
+      list-style-type: disc;
+      margin: $base-spacing;
     }
   }
 }

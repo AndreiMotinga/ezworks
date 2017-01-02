@@ -34,12 +34,10 @@ $main-navbar-a-border-bottom: 2px;
 .main-navbar ul {
   @include outer-container(900px);
   display: flex;
-  padding: 0;
 }
 
 .main-navbar li {
   flex: 1;
-  list-style-type: none;
   text-align: center;
 }
 
