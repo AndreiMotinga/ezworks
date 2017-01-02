@@ -1,6 +1,8 @@
 article
   header
     h1.title= @article.title
+    - if current_user.try(:id) == 1
+      = link_to "Редактировать", edit_article_path(@article), "data-turbolinks": false
     = timeago_tag @article.created_at
     .tags
       - @article.tag_list.each do |tag|
@@ -9,6 +11,7 @@ article
   main
     = markdown @article.text
 
+hr
 section#disqus_thread
 
 

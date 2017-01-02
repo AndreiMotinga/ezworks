@@ -20,6 +20,8 @@ $articles-width: 700px;
 
 .articles-show {
   article {
+    margin-bottom: $base-spacing * 2;
+
     header {
       display: flex;
       align-items: center;
