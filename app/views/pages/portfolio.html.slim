@@ -2,14 +2,22 @@
 
 .cards
   - projects.each do |project|
+    - name = project["name"]
+    - url = project["url"]
+    - image_link = image_path("portfolio/#{project["image"]}")
+    - git = project["github"]
+    - tags = project["tags"]
+
     .card
       .card-header
-        = project["name"]
+        = name
       .card-image
-        a href=project["url"] target="_blank"
-          img src=image_path("portfolio/#{project["image"]}") alt=project["name"]
+        a href=url target="_blank"
+          img src=image_link alt=name
       .card-copy
-        a href=project["url"] target="_blank" type="button" VISIT
+        a href=git target="_blank" type="button"
+          = fa_icon "github lg"
         .tags
-          a href=project["github"] target="_blank" type="button"
-            = fa_icon "github lg"
+          - tags.each do |tag|
+            span.tag = tag
+

@@ -24,7 +24,6 @@
   border: $card-border;
   border-radius: $base-border-radius;
   box-shadow: $box-shadow;
-  cursor: pointer;
   flex-basis: 15em;
   flex-grow: 1;
   margin: 0 $card-margin $base-spacing $card-margin;
@@ -42,6 +41,10 @@
       opacity: 1;
       transition: all 0.2s ease-in-out;
       width: 100%;
+
+      &:hover {
+        opacity: $card-image-hover-opacity;
+      }
     }
   }
 
@@ -73,26 +76,13 @@
     .tags {
       float: right;
 
-      a {
-        color: $base-font-color;
+      .tag {
+        margin: 2px;
+        padding: 1px 7px;
+        border-radius: 10px;
+        border: 1px solid $base-border-color;
+        font-size: 12px;
       }
-    }
-  }
-
-  &:focus,
-  &:hover {
-    cursor: pointer;
-
-    img {
-      opacity: $card-image-hover-opacity;
-    }
-  }
-
-  &:active {
-    background-color: $card-background;
-
-    .card-header {
-      background-color: $card-background;
     }
   }
 }

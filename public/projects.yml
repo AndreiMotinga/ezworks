@@ -2,50 +2,60 @@
   name: EZPOISK
   url: https://www.ezpoisk.com
   image: ezpoisk
-  tags:
-    - rails
-    - react
   github: https://github.com/AndreiMotinga/ezpoisk
+  tags:
+    - Rails
+    - jQuery
 -
   name: Agir Security Solution
   url: http://ezworks-agir.s3-website-us-east-1.amazonaws.com/
   image: agir
-  desc: foo bar
   github: https://github.com/AndreiMotinga/agir
+  tags:
+    - React
 -
   name: HEALTH-MATE
   url: https://www.healthmate.fit/
   image: health-mate
   github: https://github.com/PearlVentures/Healthmate-Rails
-  desc: foo bar
+  tags:
+    - Rails
+    - jQuery
 -
   name: NICKS FURNITURE
   image: nicks-furniture
   url: http://www.nicks-furniture.com
   github: https://github.com/AndreiMotinga/nicks-furniture
-  desc: foo bar
+  tags:
+    - Middleman
 -
   name: SPARKY
   url: http://www.sparky.md
   image: sparky
   github: https://bitbucket.org/juniorAuroch/sparky
-  desc: foo bar
+  tags:
+    - Rails
+    - Spee
 -
   name: EZWORKS
   url: http://www.ezworks.online
   image: ezworks
   github: https://github.com/AndreiMotinga/ezworks.online
-  desc: foo bar
+  tags:
+    - Rails
 -
   name: SVideo
   url: http://ezworks-svideo.s3-website-us-east-1.amazonaws.com/
   image: svideo
   github: https://github.com/AndreiMotinga/svideo
-  desc: foo bar
+  tags:
+    - React
+    - Redux
 -
   name: Zen
   url: http://ezworks-zen.s3-website-us-east-1.amazonaws.com/zen
   image: zen
   github: https://github.com/AndreiMotinga/zen
-  desc: foo bar
-
+  tags:
+    - React
+    - Redux
