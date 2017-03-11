@@ -34,6 +34,8 @@ $main-navbar-a-border-bottom: 2px;
 .main-navbar ul {
   @include outer-container(900px);
   display: flex;
+  list-style-type: none;
+  margin-bottom: 0;
 }
 
 .main-navbar li {

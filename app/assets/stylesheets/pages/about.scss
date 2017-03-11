@@ -2,6 +2,8 @@
   .nav {
     display: flex;
     align-items: center;
+    list-style-type: none;
+    margin-bottom: 0;
 
     li {
       flex: 20;
