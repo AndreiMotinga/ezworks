@@ -3,26 +3,38 @@
   url: https://www.ezpoisk.com
   image: ezpoisk
   desc: foo bar
-
+-
+  name: Agir Security Solution
+  url: http://ezworks-agir.s3-website-us-east-1.amazonaws.com/
+  image: agir
+  desc: foo bar
+-
+  name: HEALTH-MATE
+  url: https://www.healthmate.fit/
+  image: health-mate
+  desc: foo bar
 -
   name: NICKS FURNITURE
   image: nicks-furniture
   url: http://www.nicks-furniture.com
-  desc: foo bar
-
--
-  name: EZWORKS
-  url: http://www.ezworks.online
-  image: ezworks
   desc: foo bar
 -
   name: SPARKY
   url: http://www.sparky.md
   image: sparky
   desc: foo bar
-
 -
-  name: HEALTH-MATE
-  url: https://www.healthmate.fit/
-  image: health-mate
+  name: EZWORKS
+  url: http://www.ezworks.online
+  image: ezworks
+  desc: foo bar
+-
+  name: SVideo
+  url: http://ezworks-svideo.s3-website-us-east-1.amazonaws.com/
+  image: svideo
+  desc: foo bar
+-
+  name: Zen
+  url: http://ezworks-zen.s3-website-us-east-1.amazonaws.com/zen
+  image: zen
   desc: foo bar
