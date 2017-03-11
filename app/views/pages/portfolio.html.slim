@@ -10,3 +10,6 @@
           img src=image_path("portfolio/#{project["image"]}") alt=project["name"]
       .card-copy
         a href=project["url"] target="_blank" type="button" VISIT
+        .tags
+          a href=project["github"] target="_blank" type="button"
+            = fa_icon "github lg"

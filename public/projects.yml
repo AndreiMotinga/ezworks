@@ -2,39 +2,50 @@
   name: EZPOISK
   url: https://www.ezpoisk.com
   image: ezpoisk
-  desc: foo bar
+  tags:
+    - rails
+    - react
+  github: https://github.com/AndreiMotinga/ezpoisk
 -
   name: Agir Security Solution
   url: http://ezworks-agir.s3-website-us-east-1.amazonaws.com/
   image: agir
   desc: foo bar
+  github: https://github.com/AndreiMotinga/agir
 -
   name: HEALTH-MATE
   url: https://www.healthmate.fit/
   image: health-mate
+  github: https://github.com/PearlVentures/Healthmate-Rails
   desc: foo bar
 -
   name: NICKS FURNITURE
   image: nicks-furniture
   url: http://www.nicks-furniture.com
+  github: https://github.com/AndreiMotinga/nicks-furniture
   desc: foo bar
 -
   name: SPARKY
   url: http://www.sparky.md
   image: sparky
+  github: https://bitbucket.org/juniorAuroch/sparky
   desc: foo bar
 -
   name: EZWORKS
   url: http://www.ezworks.online
   image: ezworks
+  github: https://github.com/AndreiMotinga/ezworks.online
   desc: foo bar
 -
   name: SVideo
   url: http://ezworks-svideo.s3-website-us-east-1.amazonaws.com/
   image: svideo
+  github: https://github.com/AndreiMotinga/svideo
   desc: foo bar
 -
   name: Zen
   url: http://ezworks-zen.s3-website-us-east-1.amazonaws.com/zen
   image: zen
+  github: https://github.com/AndreiMotinga/zen
   desc: foo bar
+
