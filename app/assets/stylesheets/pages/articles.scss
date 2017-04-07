@@ -1,6 +1,10 @@
 $articles-width: 700px;
 
 .articles {
+  .article {
+    margin-left: $small-spacing;
+    margin-right: $small-spacing;
+  }
   main {
     @include outer-container($articles-width);
   }
