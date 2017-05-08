@@ -28,14 +28,14 @@
   github: https://github.com/AndreiMotinga/nicks-furniture
   tags:
     - Middleman
--
-  name: SPARKY
-  url: http://www.sparky.md
-  image: sparky
-  github: https://bitbucket.org/juniorAuroch/sparky
-  tags:
-    - Rails
-    - Spee
+# -
+#   name: SPARKY
+#   url: http://www.sparky.md
+#   image: sparky
+#   github: https://bitbucket.org/juniorAuroch/sparky
+#   tags:
+#     - Rails
+#     - Spee
 -
   name: EZWORKS
   url: http://www.ezworks.online
