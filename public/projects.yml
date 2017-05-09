@@ -8,7 +8,7 @@
     - jQuery
 -
   name: Agir Security Solution
-  url: http://ezworks-agir.s3-website-us-east-1.amazonaws.com/
+  url: //agirss.com
   image: agir
   github: https://github.com/AndreiMotinga/agir
   tags:
