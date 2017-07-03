@@ -24,7 +24,7 @@
 -
   name: NICKS FURNITURE
   image: nicks-furniture
-  url: http://www.nicks-furniture.com
+  url: http://www.nicks-furniture.com.s3-website-us-west-2.amazonaws.com
   github: https://github.com/AndreiMotinga/nicks-furniture
   tags:
     - Middleman
